@@ -28,6 +28,9 @@ jobs:
             gradle-version: 2.1
             
        #### BUILDS  ######
+       - name: Dar permisos a gradle
+         run: chmod 777 src/Clients/gradlew
+         
        - name: hacer build del frontend 
          working-directory: src/Clients
          run: ./gradlew build
