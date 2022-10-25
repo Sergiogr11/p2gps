@@ -25,7 +25,10 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           gradle-version: 2.1
-          
+        
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew   
+      
       - name: hacer build del frontend
         working-directory: src/Clients
         run: ./gradlew build
