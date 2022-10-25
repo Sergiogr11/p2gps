@@ -27,9 +27,9 @@ jobs:
           gradle-version: 2.1
           
       - name: hacer build del frontend
-        working-directory: src/Clients
+        working-directory: /src/Clients
         run: ./gradlew build
        
       - name: hacer build del backend
-        working-directory: src/Backend/OrderService
+        working-directory: /src/Backend/OrderService
         run: ./gradlew build test
