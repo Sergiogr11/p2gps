@@ -28,8 +28,8 @@ jobs:
           
       - name: hacer build del frontend
         working-directory: src/Clients
-        run: ./gradlew build
+        run: sh gradlew build
        
       - name: hacer build del backend
         working-directory: src/Backend/OrderService
-        run: ./gradlew build test
+        run: sh gradlew build test
