@@ -36,5 +36,5 @@ jobs:
          run: ./gradlew build
          
        - name: hacer build del backend
-         working-directory: src/Backend/OrderService
+         working-directory: ./src/Backend/OrderService
          run: ./gradlew build test
