@@ -29,7 +29,7 @@ jobs:
             
        #### BUILDS  ######
        - name: Dar permisos a gradle
-         run: chmod 777 src/Clients/gradlew
+         run: chmod 777 ./src/Clients/gradlew
          
        - name: hacer build del frontend 
          working-directory: ./src/Clients
