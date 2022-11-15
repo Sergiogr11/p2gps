@@ -31,10 +31,13 @@ jobs:
        - name: Dar permisos a gradle
          run: chmod 777 ./src/Clients/gradlew
          
+       - name: Dar permisos a gradle
+         run: chmod 777 ./src/Backend/OrderService/gradlew
+         
        - name: hacer build del frontend 
          working-directory: ./src/Clients
          run: ./gradlew build
          
        - name: hacer build del backend
          working-directory: ./src/Backend/OrderService
-         run: ./gradlew build
+         run: ./gradlew build test
