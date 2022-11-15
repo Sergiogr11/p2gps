@@ -32,7 +32,7 @@ jobs:
          run: chmod 777 src/Clients/gradlew
          
        - name: hacer build del frontend 
-         working-directory: src/Clients
+         working-directory: ./src/Clients
          run: ./gradlew build
          
        - name: hacer build del backend
